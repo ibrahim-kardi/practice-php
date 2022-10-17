@@ -1,0 +1,23 @@
+<?php
+class Human{
+
+public $name;
+public function sayhi(){
+echo 'hi';
+$this ->sayname();
+}
+
+function sayname(){
+echo "my name is:{$this->name}\n";
+}
+}
+
+
+$h1= new Human();
+$h2 = new Human();
+$h1-> name = 'rubel';
+$h2-> name = 'kardi';
+$h2-> sayname();
+$h1->sayhi();
+
+?>
