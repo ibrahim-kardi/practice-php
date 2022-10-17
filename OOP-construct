@@ -1,0 +1,34 @@
+<?php
+class Human{
+
+public $name;
+public $age;
+public function __construct($personname,$personage=0){
+  echo "object created calling from constract\n";
+  $this->name = $personname;
+  $this->age = $personage;
+}
+public function sayhi(){
+echo 'hi\n';
+$this ->sayname();
+}
+
+function sayname(){
+  if($this->age){
+    echo "my name is:{$this->name}\n,My age is : {$this->age}\n";
+  }
+else{
+  echo "my name is:{$this->name}\n,i don't say";
+}
+}
+}
+
+
+$h1= new Human('kardi',26);
+$h2 = new Human('borno');
+
+
+$h1->sayhi();
+$h2-> sayhi();
+
+?>
